@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Saasible GTM Agency for AI-era B2B SaaS Founders</title>
+  <meta name="description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Choose from GTM Diagnostic, GTM Build, or GTM Retainer." />
+  <meta name="keywords" content="GTM agency India, WhatsApp outbound B2B, Voice AI GTM, SaaS go-to-market India, outbound system builder India, B2B SaaS founder GTM, conversational GTM" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services — Saasible GTM Agency for AI-era B2B SaaS Founders" />
+  <meta property="og:description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Go from zero GTM to first revenue in 30 days." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saasible.in/services" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Services — Saasible GTM Agency for AI-era B2B SaaS Founders" />
+  <meta name="twitter:description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Go from zero GTM to first revenue in 30 days." />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --black: #0a0a0a;
+      --white: #ffffff;
+      --gray-50: #f9f9f7;
+      --gray-100: #f0ede8;
+      --gray-200: #e2ddd6;
+      --gray-400: #a09890;
+      --gray-600: #6b6560;
+      --gray-800: #2a2520;
+      --accent: #1a1a2e;
+      --accent-mid: #16213e;
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --radius: 8px;
+      --radius-lg: 14px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--white);
+      color: var(--black);
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      height: 60px;
+    }
+    .nav-logo { font-size: 1.1rem; font-weight: 700; letter-spacing: -.02em; color: var(--accent); text-decoration: none; font-family: 'Georgia', serif; }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; }
+    .nav-links a { font-size: 0.82rem; color: var(--gray-600); text-decoration: none; font-family: system-ui, sans-serif; font-weight: 500; transition: color .15s; }
+    .nav-links a:hover { color: var(--black); }
+    .nav-cta { font-size: 0.82rem; background: var(--accent); color: var(--white); padding: 7px 16px; border-radius: var(--radius); text-decoration: none; font-family: system-ui, sans-serif; font-weight: 500; transition: background .15s; }
+    .nav-cta:hover { background: var(--accent-mid); }
+
+    /* ── PAGE HEADER ── */
+    .page-header {
+      max-width: 760px; margin: 0 auto;
+      padding: 5rem 2rem 3rem;
+    }
+    .page-header-eyebrow {
+      font-family: system-ui, sans-serif;
+      font-size: 0.75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1.25rem; display: block;
+    }
+    .page-header h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      line-height: 1.2; font-weight: 400; letter-spacing: -.03em;
+      margin-bottom: 1.25rem;
+    }
+    .page-header h1 em { font-style: italic; color: var(--gray-600); }
+    .page-header p {
+      font-family: system-ui, sans-serif;
+      font-size: 1rem; color: var(--gray-600); line-height: 1.6;
+      max-width: 520px;
+    }
+
+    /* ── SECTIONS ── */
+    section { padding: 5rem 2rem; }
+    .section-inner { max-width: 900px; margin: 0 auto; }
+    .section-label {
+      font-family: system-ui, sans-serif;
+      font-size: 0.72rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+      color: var(--gold); margin-bottom: 1rem; display: block;
+    }
+    h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+      font-weight: 400; letter-spacing: -.03em; line-height: 1.2;
+      margin-bottom: 3rem;
+    }
+    h2 em { font-style: italic; color: var(--gray-600); }
+
+    /* ── SERVICE CARDS ── */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .service-card {
+      border: 1px solid var(--gray-200); border-radius: var(--radius-lg);
+      padding: 2rem; position: relative;
+    }
+    .service-card.featured { border-color: var(--accent); }
+    .badge {
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--accent); color: var(--white);
+      font-family: system-ui, sans-serif; font-size: 0.68rem; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase;
+      padding: 4px 12px; border-radius: 20px;
+    }
+    .service-type {
+      font-family: system-ui, sans-serif;
+      font-size: 0.7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--gray-400); margin-bottom: 0.5rem; display: block;
+    }
+    .service-card h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.75rem; font-family: system-ui, sans-serif; }
+    .service-card > p { font-family: system-ui, sans-serif; font-size: 0.85rem; color: var(--gray-600); margin-bottom: 1.5rem; line-height: 1.6; }
+    .service-list { list-style: none; margin-bottom: 1.5rem; }
+    .service-list li {
+      font-family: system-ui, sans-serif; font-size: 0.82rem; color: var(--gray-600);
+      padding: 5px 0; border-bottom: 1px solid var(--gray-100);
+      display: flex; align-items: flex-start; gap: 6px;
+    }
+    .service-list li:last-child { border-bottom: none; }
+    .price { font-size: 1.6rem; font-weight: 400; letter-spacing: -.03em; margin-bottom: 0.25rem; }
+    .price-note { font-family: system-ui, sans-serif; font-size: 0.75rem; color: var(--gray-400); margin-bottom: 1.5rem; }
+    .service-cta {
+      display: block; text-align: center;
+      background: var(--accent); color: var(--white);
+      padding: 10px 20px; border-radius: var(--radius);
+      text-decoration: none; font-family: system-ui, sans-serif;
+      font-size: 0.85rem; font-weight: 500; transition: background .15s;
+    }
+    .service-cta:hover { background: var(--accent-mid); }
+
+    /* ── COMPARE ── */
+    .compare { background: var(--gray-50); }
+    .compare-table { width: 100%; border-collapse: collapse; font-family: system-ui, sans-serif; font-size: 0.85rem; }
+    .compare-table th, .compare-table td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--gray-100); }
+    .compare-table th { font-size: 0.75rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--gray-400); background: var(--gray-50); }
+    .compare-table td:first-child { color: var(--gray-800); font-weight: 500; }
+    .compare-table td.yes { color: #1a7a4a; font-weight: 600; }
+    .compare-table td.no { color: var(--gray-400); }
+    .compare-table td.highlight { background: #fafaf7; }
+    .compare-table strong { color: var(--accent); }
+
+    /* ── CTA ── */
+    .cta-section {
+      background: var(--black); color: var(--white);
+      text-align: center; padding: 6rem 2rem;
+    }
+    .cta-section h2 { color: var(--white); margin-bottom: 1rem; }
+    .cta-section h2 em { color: var(--gold-light); }
+    .cta-section p { font-family: system-ui, sans-serif; font-size: 0.95rem; color: rgba(255,255,255,.6); margin-bottom: 2.5rem; }
+    .cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+    .cta-btn-primary {
+      background: var(--white); color: var(--black);
+      padding: 14px 28px; border-radius: var(--radius);
+      text-decoration: none; font-family: system-ui, sans-serif;
+      font-size: 0.92rem; font-weight: 600; transition: opacity .15s;
+    }
+    .cta-btn-primary:hover { opacity: .9; }
+    .cta-btn-ghost {
+      border: 1px solid rgba(255,255,255,.3); color: rgba(255,255,255,.8);
+      padding: 14px 28px; border-radius: var(--radius);
+      text-decoration: none; font-family: system-ui, sans-serif;
+      font-size: 0.92rem; font-weight: 500; transition: border-color .15s;
+    }
+    .cta-btn-ghost:hover { border-color: rgba(255,255,255,.6); }
+    .cta-note { font-family: system-ui, sans-serif; font-size: 0.78rem; color: rgba(255,255,255,.4); margin-top: 1.5rem; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--black); border-top: 1px solid rgba(255,255,255,.08);
+      padding: 2rem; text-align: center;
+    }
+    .footer-inner {
+      max-width: 900px; margin: 0 auto;
+      display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;
+    }
+    footer p { font-family: system-ui, sans-serif; font-size: 0.78rem; color: rgba(255,255,255,.35); }
+    .footer-links { display: flex; gap: 1.5rem; list-style: none; }
+    .footer-links a { font-family: system-ui, sans-serif; font-size: 0.78rem; color: rgba(255,255,255,.4); text-decoration: none; transition: color .15s; }
+    .footer-links a:hover { color: rgba(255,255,255,.7); }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0 1rem; }
+      .nav-links { display: none; }
+      .services-grid { grid-template-columns: 1fr; }
+      h2 { margin-bottom: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="/">Saasible</a>
+    <ul class="nav-links">
+      <li><a href="/#icp">Who It's For</a></li>
+      <li><a href="/services.html">Services</a></li>
+      <li><a href="/#process">How It Works</a></li>
+      <li><a href="/#results">Results</a></li>
+      <li><a href="/#about">About</a></li>
+      <li><a href="/#faq">FAQ</a></li>
+    </ul>
+    <a class="nav-cta" href="#book">Book a Free GTM Call →</a>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <span class="page-header-eyebrow">Services</span>
+    <h1>Build your GTM system.<br><em>Start getting customers.</em></h1>
+    <p>Three ways to work with Saasible — from quick clarity to a full outbound engine built and running in 30 days.</p>
+  </div>
+
+  <!-- SERVICE CARDS -->
+  <section>
+    <div class="section-inner">
+      <div class="services-grid">
+
+        <div class="service-card">
+          <span class="service-type">One-Time · 5 Days</span>
+          <h3>GTM Diagnostic</h3>
+          <p>Clarity before you build anything. We define your ICP, pick the right channel, and hand you a messaging framework ready to run.</p>
+          <ul class="service-list">
+            <li>✓ ICP definition workshop</li>
+            <li>✓ Channel strategy (WhatsApp vs Voice vs both)</li>
+            <li>✓ Messaging framework + first sequences</li>
+            <li>✓ Notion doc with full findings</li>
+            <li>✓ 60-min walkthrough call</li>
+          </ul>
+          <div class="price">₹15,000</div>
+          <div class="price-note">Delivered in 5 business days · Best for: founders who need clarity before building anything</div>
+          <a class="service-cta" href="#book">Book the Diagnostic →</a>
+        </div>
+
+        <div class="service-card featured">
+          <div class="badge">Most Popular</div>
+          <span class="service-type">One-Time · 30 Days</span>
+          <h3>GTM Build</h3>
+          <p>We build the entire outbound system — WhatsApp automation, Voice AI agent, sequences — and run the first 30-day campaign with you.</p>
+          <ul class="service-list">
+            <li>✓ Everything in GTM Diagnostic</li>
+            <li>✓ WhatsApp automation flows built</li>
+            <li>✓ Voice AI agent scripted and deployed</li>
+            <li>✓ 30-day campaign execution</li>
+            <li>✓ Weekly performance reporting</li>
+            <li>✓ Full handoff with SOPs and Loom walkthroughs</li>
+          </ul>
+          <div class="price">₹75,000</div>
+          <div class="price-note">Flat fee · 30 days · Best for: founders ready to launch their first GTM motion</div>
+          <a class="service-cta" href="#book">Start the Build →</a>
+        </div>
+
+        <div class="service-card">
+          <span class="service-type">Monthly · Ongoing</span>
+          <h3>GTM Retainer</h3>
+          <p>GTM as an ongoing function — without the full-time hire. We manage the system, build new sequences, and optimize every month.</p>
+          <ul class="service-list">
+            <li>✓ Ongoing system management and optimization</li>
+            <li>✓ Weekly performance review</li>
+            <li>✓ New sequences and campaign builds</li>
+            <li>✓ Dedicated Slack access to Vinod</li>
+            <li>✓ Monthly strategy call</li>
+          </ul>
+          <div class="price">₹40,000/mo</div>
+          <div class="price-note">Ongoing · pause anytime with 30 days notice · Best for: founders who want GTM as an ongoing function</div>
+          <a class="service-cta" href="#book">Start the Retainer →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARE -->
+  <section class="compare">
+    <div class="section-inner">
+      <span class="section-label">Why Saasible</span>
+      <h2>How we compare — <em>honestly</em></h2>
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Saasible</th>
+            <th>Sales Head Hire</th>
+            <th>Generic GTM Agency</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Starts in days, not months</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Builds the actual system</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>WhatsApp + Voice AI expertise</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>India B2B market knowledge</td>
+            <td class="yes highlight">✓</td><td class="no">Maybe</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>No equity, no full-time cost</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="yes">✓</td>
+          </tr>
+          <tr>
+            <td>Proven enterprise GTM track record</td>
+            <td class="yes highlight">✓</td><td class="no">Maybe</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Founder-facing, not account manager</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Typical cost to start</td>
+            <td class="highlight"><strong>₹15,000</strong></td>
+            <td>₹8L–15L/year</td>
+            <td>₹1L–5L/month</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="book" class="cta-section">
+    <h2>Not sure which tier is right?<br><em>Start with a conversation.</em></h2>
+    <p>Book a free 30-minute GTM call. We'll look at your product, your ICP, and tell you exactly what we'd build first — no pitch, no pressure.</p>
+    <div class="cta-buttons">
+      <a class="cta-btn-primary" href="mailto:hello@saasible.in?subject=Free%20GTM%20Call%20%E2%80%94%20Saasible&body=Hi%20Vinod%2C%0A%0AI'd%20like%20to%20book%20a%20free%20GTM%20call.%0A%0AProduct%3A%20%0AICP%20(who%20you're%20selling%20to)%3A%20%0ACurrent%20GTM%20problem%3A%20%0A%0AThanks!">Email to Book a Call →</a>
+      <a class="cta-btn-ghost" href="https://www.linkedin.com/in/yuvinod/" target="_blank">Or DM on LinkedIn →</a>
+    </div>
+    <p class="cta-note">No pitch. No pressure. Just an honest look at your GTM.</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <p>© 2026 Saasible. GTM agency for AI-era B2B SaaS founders in India.</p>
+      <ul class="footer-links">
+        <li><a href="/services.html">Services</a></li>
+        <li><a href="/#process">How It Works</a></li>
+        <li><a href="/#results">Results</a></li>
+        <li><a href="/#about">About</a></li>
+        <li><a href="https://www.linkedin.com/in/yuvinod/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:hello@saasible.in">Contact</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>

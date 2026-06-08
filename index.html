@@ -3,8 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saasible — Fractional Customer Success for Growth-Stage SaaS</title>
-  <meta name="description" content="Enterprise-grade Customer Success for growth-stage SaaS founders. Onboarding systems, health scoring, and retention playbooks — built by someone who managed CS for Netflix, Google, and Bosch." />
+  <title>Saasible — GTM Agency for AI-era B2B SaaS Founders in India</title>
+  <meta name="description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Go from zero GTM to first revenue in 30 days." />
+  <meta name="keywords" content="GTM agency India, WhatsApp outbound B2B, Voice AI GTM, SaaS go-to-market India, outbound system builder India, B2B SaaS founder GTM, conversational GTM" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saasible — GTM Agency for AI-era B2B SaaS Founders in India" />
+  <meta property="og:description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Go from zero GTM to first revenue in 30 days." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://saasible.in" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Saasible — GTM Agency for AI-era B2B SaaS Founders in India" />
+  <meta name="twitter:description" content="Saasible builds WhatsApp and Voice AI outbound systems for Indian B2B SaaS founders. Go from zero GTM to first revenue in 30 days." />
+
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -91,25 +104,18 @@
     }
     .btn-ghost:hover { border-color: var(--gray-400); color: var(--black); }
 
-    /* ── LOGOS ── */
-    .logos {
+    /* ── CREDENTIAL BAR ── */
+    .credential-bar {
       border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200);
-      padding: 1.5rem 2rem;
-      display: flex; align-items: center; justify-content: center; gap: 0.5rem;
-      flex-wrap: wrap;
+      padding: 1.25rem 2rem;
+      display: flex; align-items: center; justify-content: center;
     }
-    .logos-label {
+    .credential-bar p {
       font-family: system-ui, sans-serif;
-      font-size: 0.7rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
-      color: var(--gray-400); margin-right: 1rem;
+      font-size: 0.78rem; color: var(--gray-400); text-align: center;
+      letter-spacing: .02em;
     }
-    .logos span {
-      font-family: system-ui, sans-serif;
-      font-size: 0.72rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase;
-      color: var(--gray-400); padding: 0 0.75rem;
-      border-right: 1px solid var(--gray-200);
-    }
-    .logos span:last-child { border-right: none; }
+    .credential-bar strong { color: var(--gray-600); font-weight: 600; }
 
     /* ── STATS ── */
     .stats {
@@ -141,22 +147,18 @@
     }
     h2 em { font-style: italic; color: var(--gray-600); }
 
-    /* ── PROBLEM ── */
-    .problem { background: var(--gray-50); }
-    .problems-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
-    .problem-card {
-      background: var(--white); padding: 2rem;
+    /* ── ICP CARDS ── */
+    .icp { background: var(--gray-50); }
+    .icp-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    .icp-card {
+      background: var(--white); padding: 2rem; border-radius: var(--radius-lg);
+      border: 1px solid var(--gray-200);
     }
-    .problem-num {
-      font-family: system-ui, sans-serif;
-      font-size: 0.72rem; font-weight: 600; color: var(--gray-400);
-      letter-spacing: .08em; margin-bottom: 1rem; display: block;
-    }
-    .problem-card h3 {
-      font-size: 1.05rem; font-weight: 600; margin-bottom: 0.75rem;
+    .icp-card h3 {
+      font-size: 1rem; font-weight: 600; margin-bottom: 0.75rem;
       font-family: system-ui, sans-serif; letter-spacing: -.01em;
     }
-    .problem-card p { font-family: system-ui, sans-serif; font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; }
+    .icp-card p { font-family: system-ui, sans-serif; font-size: 0.88rem; color: var(--gray-600); line-height: 1.6; }
 
     /* ── SERVICES ── */
     .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
@@ -321,7 +323,7 @@
       nav { padding: 0 1rem; }
       .nav-links { display: none; }
       .stats { grid-template-columns: repeat(2, 1fr); }
-      .problems-grid, .services-grid, .results-grid, .process-grid { grid-template-columns: 1fr; }
+      .icp-grid, .services-grid, .results-grid, .process-grid { grid-template-columns: 1fr; }
       .about-grid { grid-template-columns: 1fr; }
       .about-img { width: 120px; height: 144px; }
       h2 { margin-bottom: 2rem; }
@@ -424,79 +426,69 @@
   <nav>
     <a class="nav-logo" href="/">Saasible</a>
     <ul class="nav-links">
-      <li><a href="#problem">Why CS</a></li>
+      <li><a href="#icp">Who It's For</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#cases">Results</a></li>
-      <li><a href="#process">Process</a></li>
+      <li><a href="#process">How It Works</a></li>
+      <li><a href="#results">Results</a></li>
       <li><a href="#about">About</a></li>
       <li><a href="#faq">FAQ</a></li>
     </ul>
-    <a class="nav-cta" href="#book">Book a Call →</a>
+    <a class="nav-cta" href="#book">Book a Free GTM Call →</a>
   </nav>
 
   <!-- HERO -->
   <div class="hero">
-    <div class="hero-eyebrow">Fractional Customer Success for SaaS</div>
-    <h1>Your customers are leaving.<br><em>You just don't see it yet.</em></h1>
-    <p class="hero-sub">Enterprise-grade Customer Success for growth-stage SaaS founders. Onboarding systems, health scoring, and retention playbooks — built by someone who managed CS for Netflix, Google, and Bosch.</p>
+    <div class="hero-eyebrow">GTM Agency for AI-era B2B SaaS Founders in India</div>
+    <h1>Your buyers are on WhatsApp.<br><em>Your GTM system isn't.</em></h1>
+    <p class="hero-sub">Saasible builds outbound and messaging systems for AI-era B2B SaaS founders in India — using WhatsApp and Voice AI as the growth channel.</p>
     <div class="hero-actions">
-      <a class="btn-primary" href="#book">Book a Free CS Audit Call →</a>
-      <a class="btn-ghost" href="#cases">See the results</a>
+      <a class="btn-primary" href="#book">Book a Free GTM Call →</a>
+      <a class="btn-ghost" href="#process">See How It Works</a>
     </div>
   </div>
 
-  <!-- LOGOS -->
-  <div class="logos">
-    <span class="logos-label">CS experience with</span>
-    <span>Netflix</span><span>Google</span><span>YouTube</span>
-    <span>Bosch</span><span>Carl Zeiss</span><span>HSBC</span><span>Nestlé</span>
+  <!-- CREDENTIAL BAR -->
+  <div class="credential-bar">
+    <p>Built by someone who drove GTM at <strong>Netflix India, Google, HSBC, and Bosch</strong></p>
   </div>
 
   <!-- STATS -->
   <div class="stats">
     <div class="stat">
-      <span class="stat-num">8+</span>
-      <span class="stat-desc">Years managing enterprise SaaS accounts</span>
+      <span class="stat-num">₹10Cr+</span>
+      <span class="stat-desc">Pipeline generated</span>
     </div>
     <div class="stat">
-      <span class="stat-num">₹10Cr</span>
-      <span class="stat-desc">Pipeline generated through strategic account reviews</span>
+      <span class="stat-num">326%</span>
+      <span class="stat-desc">Campaign ROI delivered</span>
     </div>
     <div class="stat">
-      <span class="stat-num">30%</span>
-      <span class="stat-desc">Average engagement lift from CS interventions</span>
+      <span class="stat-num">3x</span>
+      <span class="stat-desc">Average activation improvement</span>
     </div>
     <div class="stat">
-      <span class="stat-num">60+</span>
-      <span class="stat-desc">Customer discovery workshops influencing product roadmaps</span>
+      <span class="stat-num">8 Years</span>
+      <span class="stat-desc">Enterprise GTM experience</span>
     </div>
   </div>
 
-  <!-- PROBLEM -->
-  <section id="problem" class="problem">
+  <!-- WHO THIS IS FOR -->
+  <section id="icp" class="icp">
     <div class="section-inner">
-      <span class="section-label">The Problem</span>
-      <h2>Your product is good. Your <em>retention</em> is killing you.</h2>
-      <div class="problems-grid">
-        <div class="problem-card">
-          <span class="problem-num">01</span>
-          <h3>No onboarding system</h3>
-          <p>Your new customers get a welcome email and then silence. By week 3, half of them have stopped logging in. By month 2, they're gone — and you never saw it coming.</p>
+      <span class="section-label">Who This Is For</span>
+      <h2>Built for founders who can <em>build</em>, but can't sell yet</h2>
+      <div class="icp-grid">
+        <div class="icp-card">
+          <h3>The AI SaaS Founder</h3>
+          <p>You shipped your product in 3 weeks. You've had 10 demos. Zero conversions. Your GTM motion is broken — and cold email isn't fixing it.</p>
         </div>
-        <div class="problem-card">
-          <span class="problem-num">02</span>
-          <h3>The founder is the CSM</h3>
-          <p>You're personally managing every customer relationship in WhatsApp groups and email threads. It worked at 5 customers. At 20, it's unsustainable. At 50, it's a liability.</p>
+        <div class="icp-card">
+          <h3>The WhatsApp-First Builder</h3>
+          <p>You know your buyers are on WhatsApp. You just don't have the system, the sequences, or the strategy to turn it into pipeline.</p>
         </div>
-        <div class="problem-card">
-          <span class="problem-num">03</span>
-          <h3>No health visibility</h3>
-          <p>You find out a customer is unhappy when they cancel. There's no health score, no usage tracking, no early warning system. Every churn event is a surprise.</p>
-        </div>
-        <div class="problem-card">
-          <span class="problem-num">04</span>
-          <h3>Revenue leaking silently</h3>
-          <p>You're spending thousands to acquire each customer, then losing them in 90 days. Your LTV can't justify your CAC, and your unit economics are quietly underwater.</p>
+        <div class="icp-card">
+          <h3>The Technical Co-founder</h3>
+          <p>You can build anything. But you've never run outbound, never written a sales sequence, never closed a deal. You need a GTM partner, not a consultant.</p>
         </div>
       </div>
     </div>
@@ -506,88 +498,83 @@
   <section id="services">
     <div class="section-inner">
       <span class="section-label">Services</span>
-      <h2>From leaking bucket to <em>retention machine</em></h2>
+      <h2>From zero GTM to <em>first revenue</em></h2>
       <div class="services-grid">
         <div class="service-card">
-          <span class="service-type">One-Time</span>
-          <h3>CS Health Audit</h3>
-          <p>A forensic review of your customer journey — from first signup to month 6. You get a clear diagnosis of where customers drop off and a prioritised action plan to stop the bleeding.</p>
+          <span class="service-type">One-Time · 5 Days</span>
+          <h3>GTM Diagnostic</h3>
+          <p>Clarity before you build anything. We define your ICP, pick the right channel, and hand you a messaging framework ready to run.</p>
           <ul class="service-list">
-            <li>✓ Full customer journey mapping</li>
-            <li>✓ Onboarding flow teardown</li>
-            <li>✓ Churn risk identification</li>
-            <li>✓ Health scoring framework draft</li>
-            <li>✓ 30/60/90-day retention action plan</li>
-            <li>✓ Recorded Loom walkthrough</li>
+            <li>✓ ICP definition workshop</li>
+            <li>✓ Channel strategy (WhatsApp vs Voice vs both)</li>
+            <li>✓ Messaging framework + first sequences</li>
+            <li>✓ Notion doc with full findings</li>
+            <li>✓ 60-min walkthrough call</li>
           </ul>
-          <div class="price">$499</div>
+          <div class="price">₹15,000</div>
           <div class="price-note">Delivered in 5 business days</div>
-          <a class="service-cta" href="#book">Book the Audit →</a>
+          <a class="service-cta" href="#book">Book the Diagnostic →</a>
         </div>
         <div class="service-card featured">
           <div class="badge">Most Popular</div>
-          <span class="service-type">Monthly</span>
-          <h3>Fractional CS Retainer</h3>
-          <p>Your embedded Customer Success partner. I work inside your company 8–10 hours per month — building the systems that make customers stay, expand, and advocate.</p>
+          <span class="service-type">One-Time · 30 Days</span>
+          <h3>GTM Build</h3>
+          <p>We build the entire outbound system — WhatsApp automation, Voice AI agent, sequences — and run the first 30-day campaign with you.</p>
           <ul class="service-list">
-            <li>✓ Custom onboarding playbook</li>
-            <li>✓ Customer health scoring system</li>
-            <li>✓ Churn early-warning alerts</li>
-            <li>✓ QBR structure and templates</li>
-            <li>✓ Expansion revenue identification</li>
-            <li>✓ Bi-weekly strategy calls</li>
-            <li>✓ Dedicated Slack access</li>
-            <li>✓ Monthly CS metrics report</li>
+            <li>✓ Everything in GTM Diagnostic</li>
+            <li>✓ WhatsApp automation flows built</li>
+            <li>✓ Voice AI agent scripted and deployed</li>
+            <li>✓ 30-day campaign execution</li>
+            <li>✓ Weekly performance reporting</li>
+            <li>✓ Full handoff with SOPs and Loom walkthroughs</li>
           </ul>
-          <div class="price">$2,000/mo</div>
-          <div class="price-note">3-month minimum · cancel anytime after</div>
-          <a class="service-cta" href="#book">Start the Retainer →</a>
+          <div class="price">₹75,000</div>
+          <div class="price-note">Flat fee · 30 days</div>
+          <a class="service-cta" href="#book">Start the Build →</a>
         </div>
         <div class="service-card">
-          <span class="service-type">Done-For-You</span>
-          <h3>CS Foundation Sprint</h3>
-          <p>A 30-day intensive. I come in, audit everything, and build your entire CS infrastructure from scratch — onboarding sequences, health scoring, playbooks, and handover docs.</p>
+          <span class="service-type">Monthly · Ongoing</span>
+          <h3>GTM Retainer</h3>
+          <p>GTM as an ongoing function — without the full-time hire. We manage the system, build new sequences, and optimize every month.</p>
           <ul class="service-list">
-            <li>✓ Full CS function audit</li>
-            <li>✓ End-to-end onboarding rebuild</li>
-            <li>✓ Health score framework (live)</li>
-            <li>✓ Churn recovery playbook</li>
-            <li>✓ Expansion/upsell playbook</li>
-            <li>✓ 90-day CS ops roadmap</li>
-            <li>✓ 2 weeks post-sprint support</li>
+            <li>✓ Ongoing system management and optimization</li>
+            <li>✓ Weekly performance review</li>
+            <li>✓ New sequences and campaign builds</li>
+            <li>✓ Dedicated Slack access to Vinod</li>
+            <li>✓ Monthly strategy call</li>
           </ul>
-          <div class="price">$4,500</div>
-          <div class="price-note">Flat fee · 30 days</div>
-          <a class="service-cta" href="#book">Book the Sprint →</a>
+          <div class="price">₹40,000/mo</div>
+          <div class="price-note">Ongoing · pause anytime with 30 days notice</div>
+          <a class="service-cta" href="#book">Start the Retainer →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- RESULTS -->
-  <section id="cases" class="results">
+  <section id="results" class="results">
     <div class="section-inner">
       <span class="section-label">Results</span>
-      <h2>What happens when CS <em>actually works</em></h2>
+      <h2>What the systems <em>actually produce</em></h2>
       <div class="results-grid">
         <div class="result-card">
-          <span class="result-tag">BFSI · WhatsApp Automation</span>
-          <h3>Enterprise bank with low WhatsApp adoption 60 days post-launch</h3>
-          <p>Implemented a structured 3-touchpoint success plan at weeks 2, 5, and 9. Redesigned the onboarding communication sequence and added proactive check-ins tied to usage milestones.</p>
+          <span class="result-tag">BFSI · WhatsApp Outbound</span>
+          <h3>Enterprise bank with near-zero WhatsApp adoption 60 days post-launch</h3>
+          <p>Built a 3-touchpoint outbound sequence tied to usage milestones. Redesigned the messaging flow and added proactive check-ins at weeks 2, 5, and 9.</p>
           <span class="result-metric">34% → 71%</span>
           <span class="result-metric-label">Activation rate in one quarter</span>
         </div>
         <div class="result-card">
-          <span class="result-tag">Consumer Electronics · RCS</span>
-          <h3>Global electronics brand seeing high churn on messaging campaigns</h3>
-          <p>Built a customer health dashboard tracking delivery rates, engagement scores, and response patterns. Introduced automated churn-risk flags two weeks before renewal conversations.</p>
+          <span class="result-tag">Consumer Electronics · Messaging</span>
+          <h3>Global brand seeing high drop-off on outbound messaging campaigns</h3>
+          <p>Built a response-tracking system and introduced automated follow-up sequences based on engagement signals. Churn-risk flags surfaced two weeks before renewal.</p>
           <span class="result-metric">+15pt</span>
           <span class="result-metric-label">NPS improvement in 6 months</span>
         </div>
         <div class="result-card">
           <span class="result-tag">Streaming · Conversational AI</span>
-          <h3>Streaming giant struggling with campaign adoption across regions</h3>
-          <p>Ran 12 discovery workshops to map adoption blockers by region. Created localised onboarding playbooks and trained internal teams on a repeatable QBR framework.</p>
+          <h3>Streaming giant with low campaign adoption across India regions</h3>
+          <p>Ran discovery workshops to map blockers by region. Built localised outbound sequences and a repeatable campaign framework for internal teams.</p>
           <span class="result-metric">326%</span>
           <span class="result-metric-label">ROI on campaign engagement</span>
         </div>
@@ -599,31 +586,31 @@
   <section id="process">
     <div class="section-inner">
       <span class="section-label">How It Works</span>
-      <h2>From firefighting to <em>predictable retention</em></h2>
+      <h2>From zero GTM to first revenue — <em>in 30 days</em></h2>
       <div class="process-grid">
         <div class="process-step">
           <span class="process-num">01</span>
-          <h3>CS Diagnostic</h3>
-          <p>We map your entire customer journey, identify where drop-offs happen, and score the health of every active account. You see the full picture for the first time.</p>
-          <span class="process-timeline">Days 1–5</span>
+          <h3>ICP Workshop</h3>
+          <p>We define exactly who you're selling to, what pain you solve, and why they should respond to you — not your competitor.</p>
+          <span class="process-timeline">Day 1–2</span>
         </div>
         <div class="process-step">
           <span class="process-num">02</span>
-          <h3>Onboarding Rebuild</h3>
-          <p>We design a structured onboarding sequence with defined touchpoints, success milestones, and automated check-ins. No customer falls through the cracks again.</p>
-          <span class="process-timeline">Days 5–14</span>
+          <h3>Channel Strategy</h3>
+          <p>WhatsApp, Voice AI, or both? We pick the right outbound channel for your ICP and build the messaging framework.</p>
+          <span class="process-timeline">Day 3–4</span>
         </div>
         <div class="process-step">
           <span class="process-num">03</span>
-          <h3>Health System</h3>
-          <p>We build your customer health scoring framework — usage-based, engagement-based, or hybrid. You get early warnings weeks before a customer is at risk.</p>
-          <span class="process-timeline">Days 14–21</span>
+          <h3>System Build</h3>
+          <p>We build the actual outbound system — WhatsApp automation flows, voice agent scripts, sequences, and integrations.</p>
+          <span class="process-timeline">Day 5–25</span>
         </div>
         <div class="process-step">
           <span class="process-num">04</span>
-          <h3>Retention Loop</h3>
-          <p>We create the playbooks for QBRs, expansion conversations, and churn recovery. Your CS function runs on systems, not heroics.</p>
-          <span class="process-timeline">Ongoing</span>
+          <h3>Launch + Optimize</h3>
+          <p>We launch, track responses, iterate messaging, and hand off the full system with SOPs so you can run it independently.</p>
+          <span class="process-timeline">Day 26–30</span>
         </div>
       </div>
     </div>
@@ -633,13 +620,13 @@
   <section id="about" class="about">
     <div class="section-inner">
       <span class="section-label">About</span>
-      <h2>I've kept <em>millions</em> in revenue from walking out the door.</h2>
+      <h2>We've driven GTM at <em>Netflix, Google, HSBC, and Bosch.</em></h2>
       <div class="about-grid">
         <img class="about-img" src="vinod.png" alt="Vinod Yadav, Founder of Saasible" />
         <div class="about-text">
-          <p>I'm <strong>Vinod Yadav</strong>. Over the past 8 years, I've managed Customer Success for some of the most demanding enterprise accounts in the world — <strong>Netflix, Google, YouTube, Bosch, HSBC, Carl Zeiss, and Nestlé</strong> — across WhatsApp Business, RCS, SMS, and conversational AI platforms.</p>
-          <p>I've personally contributed to a <strong>₹10 Crore pipeline</strong> through strategic account reviews, run <strong>60+ customer discovery workshops</strong> that shaped product roadmaps, and built the CS playbooks that improved enterprise engagement by <strong>30%</strong> and NPS by <strong>15 points</strong>.</p>
-          <p>I started Saasible because I watched the same pattern at every SaaS company: founders spend everything on acquisition and nothing on keeping the customers they already have. The ones who survive are the ones who fix retention first. That's what I do.</p>
+          <p>Saasible is run by <strong>Vinod Yadav</strong>. Over 8 years, he built WhatsApp outbound systems, Voice AI agents, and lifecycle campaigns for some of the most demanding enterprise accounts in India — <strong>Netflix India, Google, YouTube, Bosch, HSBC, Carl Zeiss, and Nestlé</strong>.</p>
+          <p>He's personally contributed to a <strong>₹10 Crore pipeline</strong>, delivered a <strong>326% ROI campaign</strong> for a streaming giant, and improved activation from 34% to 71% for a major bank — all using conversational channels.</p>
+          <p>Saasible exists because most technical founders know how to build products but have never run outbound. We bring the systems, the sequences, and the GTM know-how — so you can stop guessing and start closing.</p>
           <div class="about-links">
             <a class="about-link" href="https://www.linkedin.com/in/yuvinod/" target="_blank">LinkedIn →</a>
             <a class="about-link" href="mailto:hello@saasible.in">hello@saasible.in</a>
@@ -659,35 +646,38 @@
           <tr>
             <th></th>
             <th>Saasible</th>
-            <th>Full-time CSM Hire</th>
-            <th>CS Consulting Firm</th>
-            <th>DIY</th>
+            <th>Sales Head Hire</th>
+            <th>Generic GTM Agency</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Enterprise CS experience (Netflix, Google-level)</td>
-            <td class="yes highlight">✓</td><td class="no">Rarely</td><td class="yes">✓</td><td class="no">✗</td>
+            <td>Starts in days, not months</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
           </tr>
           <tr>
-            <td>Understands conversational AI / CPaaS</td>
-            <td class="yes highlight">✓</td><td class="no">Unlikely</td><td class="no">✗</td><td class="no">✗</td>
+            <td>Builds the actual system</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
           </tr>
           <tr>
-            <td>Ready-to-deploy CS playbooks</td>
-            <td class="yes highlight">✓</td><td class="no">3-6 months</td><td class="yes">✓</td><td class="no">✗</td>
+            <td>WhatsApp + Voice AI expertise</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
           </tr>
           <tr>
-            <td>Startup-speed execution</td>
-            <td class="yes highlight">✓</td><td class="yes">✓</td><td class="no">Slow</td><td class="yes">✓</td>
+            <td>India B2B market knowledge</td>
+            <td class="yes highlight">✓</td><td class="no">Maybe</td><td class="no">✗</td>
           </tr>
           <tr>
-            <td>No ₹20-30 LPA salary commitment</td>
-            <td class="yes highlight">✓</td><td class="no">✗</td><td class="yes">✓</td><td class="yes">✓</td>
+            <td>No equity, no full-time cost</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="yes">✓</td>
           </tr>
           <tr>
-            <td>Typical monthly cost</td>
-            <td class="highlight"><strong>$499 – $2,000</strong></td><td>₹1.5L – ₹2.5L</td><td>$5K – $15K</td><td>Your time</td>
+            <td>Proven enterprise GTM track record</td>
+            <td class="yes highlight">✓</td><td class="no">Maybe</td><td class="no">✗</td>
+          </tr>
+          <tr>
+            <td>Founder-facing, not account manager</td>
+            <td class="yes highlight">✓</td><td class="no">✗</td><td class="no">✗</td>
           </tr>
         </tbody>
       </table>
@@ -705,42 +695,42 @@
             What stage of startup is this best for?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">Saasible works best with B2B SaaS founders who have a working product and 10–100 customers, but no structured Customer Success function. Typically pre-Series B, ₹10L to ₹5Cr ARR. If your founder is still the de-facto CSM, you're in the right place.</div>
+          <div class="faq-a">Saasible works best with B2B SaaS founders who have a working product but no GTM motion yet — typically pre-revenue or under ₹10L MRR. If you've had some conversations but nothing is converting consistently, you're in the right place.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
-            How is this different from hiring a full-time CSM?
+            Why WhatsApp and Voice AI specifically?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">A full-time CSM costs ₹15–25 LPA and takes 3–6 months to build your CS infrastructure. With Saasible, you get enterprise-grade CS playbooks on day one — built by someone who's managed Netflix and Google accounts — at a fraction of the cost. You get the systems first, and hire the team to run them later.</div>
+          <div class="faq-a">In India, your buyers are on WhatsApp. Cold email open rates are under 20%. WhatsApp open rates are above 80%. Voice AI lets you run outbound calls at scale without a sales team. We build where attention actually is — not where the templates say it should be.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
-            Do you only work with conversational AI companies?
+            How is this different from hiring a sales person?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">No. My deepest expertise is in CPaaS and conversational AI from my years at Gupshup, but the CS frameworks I build are universal to any B2B SaaS product. I work with companies across fintech, healthtech, developer tools, and more. The onboarding and retention principles are the same.</div>
+          <div class="faq-a">A sales hire costs ₹8–15 LPA and takes 3 months to ramp. They bring hustle — not systems. We bring the outbound infrastructure, the sequences, and the playbooks on day one. You can hire a sales person to run the system we build. That's the right order of operations.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
-            What does the 3-month minimum on the retainer cover?
+            Do I need to know anything about WhatsApp APIs or VAPI?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">CS is a compounding game — the biggest retention improvements show up in months 2 and 3 as the systems take hold. The minimum ensures we have enough time to build, implement, and measure real outcomes. After 3 months, you can continue month-to-month or pause anytime with 30 days notice.</div>
+          <div class="faq-a">No. We handle the technical setup — API connections, automation flows, voice agent configuration, integrations. You focus on the product. We build the GTM engine.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
-            How many hours per month do you dedicate to each client?
+            What does the GTM Build actually deliver at the end of 30 days?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">On the Fractional CS Retainer, I dedicate 8–10 focused hours per month per client. This includes bi-weekly strategy calls, playbook building, health score monitoring, and async Slack support. It's structured to deliver maximum impact without requiring full-time overhead.</div>
+          <div class="faq-a">A fully built outbound system: WhatsApp automation flows, a Voice AI agent (if applicable), 30 days of campaign data, a Notion handoff doc, and Loom walkthroughs of every component. You own everything. We hand off the keys.</div>
         </div>
         <div class="faq-item">
           <div class="faq-q" onclick="toggleFaq(this)">
-            Can you help with GTM and acquisition too?
+            Can you guarantee results?
             <span class="faq-icon">+</span>
           </div>
-          <div class="faq-a">Yes. CS and GTM are deeply connected — how you onboard determines whether a customer becomes a case study or a churn statistic. While my primary focus is retention and CS, I bring GTM thinking into every engagement. For founders who need acquisition help alongside retention, we can build a combined plan.</div>
+          <div class="faq-a">No. Anyone who guarantees pipeline numbers in GTM is lying to you. What we guarantee: the system gets built, the campaigns get launched, and you get honest weekly reporting on what's working and what needs to change. Results depend on your product, your market, and your ICP clarity — which is exactly what the diagnostic is designed to sharpen.</div>
         </div>
       </div>
     </div>
@@ -748,22 +738,23 @@
 
   <!-- CTA -->
   <section id="book" class="cta-section">
-    <h2>Stop losing customers.<br>Start <em>keeping</em> them.</h2>
-    <p>Book a free 30-minute CS audit call. We'll map your customer journey, identify where the leaks are, and tell you exactly what we'd fix first.</p>
+    <h2>Stop building features.<br>Start <em>getting customers.</em></h2>
+    <p>Book a free 30-minute GTM call. We'll look at your product, your ICP, and tell you exactly what outbound system we'd build first.</p>
     <div class="cta-buttons">
-      <a class="cta-btn-primary" href="mailto:Yuvinod@gmail.com?subject=Saasible%20CS%20Audit%20Call&body=Hi%20Vinod%2C%0A%0AI'd%20like%20to%20book%20a%20free%20CS%20audit%20call.%0A%0ACompany%3A%20%0AProduct%3A%20%0ACurrent%20customers%3A%20%0ABiggest%20CS%20challenge%3A%20%0A%0AThanks!">Email Me to Book a Call →</a>
-      <a class="cta-btn-ghost" href="https://www.linkedin.com/in/yuvinod/" target="_blank">Or DM me on LinkedIn →</a>
+      <a class="cta-btn-primary" href="mailto:hello@saasible.in?subject=Free%20GTM%20Call%20%E2%80%94%20Saasible&body=Hi%20Vinod%2C%0A%0AI'd%20like%20to%20book%20a%20free%20GTM%20call.%0A%0AProduct%3A%20%0AICP%20(who%20you're%20selling%20to)%3A%20%0ACurrent%20GTM%20problem%3A%20%0A%0AThanks!">Email to Book a Call →</a>
+      <a class="cta-btn-ghost" href="https://www.linkedin.com/in/yuvinod/" target="_blank">Or DM on LinkedIn →</a>
     </div>
-    <p class="cta-note">No pitch. No pressure. Just an honest look at your retention.</p>
+    <p class="cta-note">No pitch. No pressure. Just an honest look at your GTM.</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
     <div class="footer-inner">
-      <p>© 2026 Saasible. Built by Vinod Yadav.</p>
+      <p>© 2026 Saasible. GTM agency for AI-era B2B SaaS founders in India.</p>
       <ul class="footer-links">
         <li><a href="#services">Services</a></li>
-        <li><a href="#cases">Results</a></li>
+        <li><a href="#process">How It Works</a></li>
+        <li><a href="#results">Results</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="https://www.linkedin.com/in/yuvinod/" target="_blank">LinkedIn</a></li>
         <li><a href="mailto:hello@saasible.in">Contact</a></li>
@@ -783,32 +774,30 @@
         <button id="sc-close" onclick="toggleWidget(false)" aria-label="Close chat">✕</button>
       </div>
       <div id="sc-body">
-        <div id="sc-bubble">Hi there! 👋 Thinking about CS for your SaaS? Let's talk.</div>
+        <div id="sc-bubble">Hi there. Building a SaaS in India and need your first GTM system? Let's talk.</div>
       </div>
       <div id="sc-footer">
-        <a id="sc-cta" href="https://wa.me/919340486096?text=Hi%20Vinod%2C%20I%20saw%20Saasible%20and%20I%27d%20like%20to%20talk%20about%20CS%20for%20my%20SaaS." target="_blank" rel="noopener">
+        <a id="sc-cta" href="https://wa.me/919340486096?text=Hi%20Vinod%2C%20I%20saw%20Saasible%20and%20I%27d%20like%20to%20talk%20about%20GTM%20for%20my%20SaaS." target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.815 0 00-3.48-8.413z"/>
           </svg>
           Chat on WhatsApp
         </a>
       </div>
     </div>
-    <div id="sc-tooltip">Chat with Vinod 👋</div>
+    <div id="sc-tooltip">Chat with Vinod</div>
     <button id="sc-float" onclick="toggleWidget()" aria-label="Open WhatsApp chat">
       <svg width="26" height="26" viewBox="0 0 24 24" fill="white">
-        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.815 0 00-3.48-8.413z"/>
       </svg>
     </button>
   </div>
 
   <script>
-    // FAQ toggle
     function toggleFaq(el) {
       el.parentElement.classList.toggle('open');
     }
 
-    // WhatsApp widget toggle
     function toggleWidget(forceState) {
       const popup = document.getElementById('sc-popup');
       const tooltip = document.getElementById('sc-tooltip');
@@ -818,7 +807,6 @@
       if (tooltip) tooltip.style.display = shouldOpen ? 'none' : '';
     }
 
-    // Hide tooltip after animation completes
     setTimeout(() => {
       const t = document.getElementById('sc-tooltip');
       if (t) t.style.display = 'none';
